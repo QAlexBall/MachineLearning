@@ -21,7 +21,7 @@ def load_dataset(filename):
       # print(ts[1], ts[2], ts[3])
       sent_pairs.append((ts[1], ts[2], float(ts[3])))
   return pd.DataFrame(sent_pairs, columns=["sent_1", "sent_2", "sim"])
-data = load_dataset('atec_nlp_sim_train.csv')
+data = load_dataset('../atec_nlp_sim_train.csv')
 # train, test = train_test_split(data, test_size = 0.2)
 data_test = data.iloc[:200]
 print(data_test)

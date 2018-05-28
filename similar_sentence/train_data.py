@@ -24,14 +24,15 @@ def load_dataset(filename):
       sent_pairs.append((ts[1], ts[2], float(ts[3])))
   return pd.DataFrame(sent_pairs, columns=["sent_1", "sent_2", "sim"])
 
-data = load_dataset('atec_nlp_sim_train_add.csv')
+data = load_dataset('../atec_nlp_sim_train_add.csv')
 data_train = data.iloc[:20000]
-data_test = data.iloc[60001:60011]
+data_test = data.iloc[:200]
 print(data_test)
 
 
 print('Start downlaod...')
-module = hub.Module("/home/alex/my_module_cache/9c61abbea1e6365bdd67e17707f5dd2434ea42d7/")
+# module = hub.Module("/home/alex/my_module_cache/9c61abbea1e6365bdd67e17707f5dd2434ea42d7/")
+module = hub.Module("https://tfhub.dev/google/nnlm-zh-dim128-with-normalization/1")
 print('End download...')
 
 
@@ -88,12 +89,12 @@ with tf.Session() as session:
                 input_placeholder.indices: indices4,
                 input_placeholder.dense_shape: dense_shape4})
 
-  clf = MLPClassifier(activation='relu', alpha=1e-05, batch_size='auto',
+  clf = MLPClassifier(activation='logistic', alpha=1e-05, batch_size='auto',
        beta_1=0.9, beta_2=0.999, early_stopping=False,
-       epsilon=1e-08, hidden_layer_sizes=(50, 3), learning_rate='constant',
+       epsilon=1e-08, hidden_layer_sizes=(100, 100), learning_rate='constant',
        learning_rate_init=0.001, max_iter=200, momentum=0.9,
        nesterovs_momentum=True, power_t=0.5, random_state=1, shuffle=True,
-       solver='lbfgs', tol=0.0001, validation_fraction=0.1, verbose=False,
+       solver='sgd', tol=0.0001, validation_fraction=0.1, verbose=False,
        warm_start=False)
   clf.fit(message_embeddings, similarity_scores)
   print(clf.predict(test))
