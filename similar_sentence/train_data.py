@@ -1,6 +1,5 @@
 import tensorflow_hub as hub
 import sentencepiece as spm
-import matplotlib.pyplot as plt
 import numpy as np
 import os
 
@@ -27,7 +26,7 @@ def load_dataset(filename):
 
 
 data = load_dataset('../atec_nlp_sim_train_add.csv')
-data_train = data.iloc[:10000]
+data_train = data.iloc[:100]
 data_test = data.iloc[50:70]
 print(data_test)
 
@@ -110,7 +109,7 @@ with tf.Session() as session:
 
     clf = MLPClassifier(activation='logistic', alpha=1e-05, batch_size='auto',
                         beta_1=0.9, beta_2=0.999, early_stopping=False,
-                        epsilon=1e-08, hidden_layer_sizes=(1000, 100, 100), learning_rate='constant',
+                        epsilon=1e-08, hidden_layer_sizes=(100, 100), learning_rate='constant',
                         learning_rate_init=0.001, max_iter=1000, momentum=0.9,
                         nesterovs_momentum=True, power_t=0.5, random_state=1, shuffle=True,
                         solver='sgd', tol=0.0001, validation_fraction=0.1, verbose=False,
