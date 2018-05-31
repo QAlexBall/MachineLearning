@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/similar_sentence/train_data.py" line="145" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dd8fe127-f97b-4523-b71d-444dd64be3e2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regression-tensorflow/poly_regression.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/regression-tensorflow/poly_regression.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/similar_sentence/train_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/similar_sentence/train_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,14 +17,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MachineLearning$MachineLearning.coverage" NAME="MachineLearning Coverage Results" MODIFIED="1527755115231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/MachineLearning$train_data.coverage" NAME="train_data Coverage Results" MODIFIED="1527753661215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_sentence" />
-    <SUITE FILE_PATH="coverage/MachineLearning$linear_regression.coverage" NAME="linear_regression Coverage Results" MODIFIED="1527757021240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regression-tensorflow" />
+    <SUITE FILE_PATH="coverage/MachineLearning$MachineLearning.coverage" NAME="MachineLearning Coverage Results" MODIFIED="1527758075409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/MachineLearning$train_data.coverage" NAME="train_data Coverage Results" MODIFIED="1527760478997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_sentence" />
+    <SUITE FILE_PATH="coverage/MachineLearning$linear_regression.coverage" NAME="linear_regression Coverage Results" MODIFIED="1527758912042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regression-tensorflow" />
     <SUITE FILE_PATH="coverage/MachineLearning$mlp_for_mnist.coverage" NAME="mlp_for_mnist Coverage Results" MODIFIED="1527587335455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MLP/MLP_FOR_MNIST" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="poly_regression.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="regularization_tensorflow.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/regression-tensorflow/regularization_tensorflow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train_data.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/similar_sentence/train_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="674">
+              <caret line="185" column="18" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#519#818#0" />
+                <element signature="e#1677#1983#0" />
+                <element signature="e#4715#4743#0" />
+                <element signature="e#4958#4985#0" />
+                <element signature="e#5108#5187#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="poly_regression.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/regression-tensorflow/poly_regression.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
@@ -35,10 +67,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sim_scores</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
@@ -53,9 +90,10 @@
         <option value="$PROJECT_DIR$/k-neighbor/K-Neighbors.ipynb" />
         <option value="$PROJECT_DIR$/scikit-learn-document/加载示例数据集.ipynb" />
         <option value="$PROJECT_DIR$/scikit-learn-document/类型转换.ipynb" />
-        <option value="$PROJECT_DIR$/similar_sentence/train_data.py" />
         <option value="$PROJECT_DIR$/regression-tensorflow/linear_regression.py" />
+        <option value="$PROJECT_DIR$/regression-tensorflow/regularization_tensorflow.py" />
         <option value="$PROJECT_DIR$/regression-tensorflow/poly_regression.ipynb" />
+        <option value="$PROJECT_DIR$/similar_sentence/train_data.py" />
       </list>
     </option>
   </component>
@@ -68,7 +106,8 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="683" />
     <option name="y" value="30" />
     <option name="width" value="683" />
     <option name="height" value="738" />
@@ -93,6 +132,11 @@
               <item name="MachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
               <item name="regression-tensorflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="similar_sentence" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MachineLearning" type="b2602c69:ProjectViewProjectNode" />
@@ -125,7 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.linear_regression">
+  <component name="RunManager" selected="Python.train_data">
     <configuration name="MachineLearning" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="MachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -208,8 +252,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.linear_regression" />
         <item itemvalue="Python.train_data" />
+        <item itemvalue="Python.linear_regression" />
         <item itemvalue="Python.mlp_for_mnist" />
       </list>
     </recent_temporary>
@@ -227,20 +271,29 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-33" width="1366" height="801" extended-state="1" />
-    <editor active="true" />
+    <frame x="0" y="30" width="1366" height="738" extended-state="6" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289256" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.32961783" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49926794" weight="0.5127388" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30535457" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32961783" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22272727" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299566" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49926794" weight="0.512301" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30247933" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32561985" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.42302158" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="SciView" order="3" weight="0.20681818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -251,7 +304,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +325,7 @@
           <line>14</line>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -432,16 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/similar_sentence/train_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/similar_sentence/use_sentencepiece.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -460,8 +502,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/regression-tensorflow/linear_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="50" />
+        <state relative-caret-position="144">
+          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -472,6 +514,31 @@
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regression-tensorflow/regularization_tensorflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similar_sentence/train_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="185" column="18" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#519#818#0" />
+            <element signature="e#1677#1983#0" />
+            <element signature="e#4715#4743#0" />
+            <element signature="e#4958#4985#0" />
+            <element signature="e#5108#5187#0" />
+          </folding>
         </state>
       </provider>
     </entry>

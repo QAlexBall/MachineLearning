@@ -2,7 +2,7 @@ import tensorflow_hub as hub
 import sentencepiece as spm
 import numpy as np
 import os
-
+import scipy
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import pandas as pd
 import re
@@ -26,7 +26,7 @@ def load_dataset(filename):
 
 
 data = load_dataset('../atec_nlp_sim_train_add.csv')
-data_train = data.iloc[:100]
+data_train = data.iloc[:1000]
 data_test = data.iloc[50:70]
 print(data_test)
 
@@ -134,7 +134,7 @@ with tf.Session() as session:
     # lg = LogisticRegression()
     # lg.fit(message_embeddings, similarity_scores)
     # print(lg.predict(test))
-    joblib.dump(clf, './clf1.pkl')
+    # joblib.dump(clf, './clf1.pkl')
 
     # for i, message_embedding in enumerate(np.array(message_embeddings).tolist()):
     #   print("Message: {}".format(data_train['sent_1'][i]))
@@ -142,3 +142,50 @@ with tf.Session() as session:
     #   message_embedding_snippet = ", ".join(
     #       (str(x) for x in message_embedding[:3]))
     #   print("Embedding: [{}, ...]\n".format(message_embedding_snippet))
+sts_input1 = tf.sparse_placeholder(tf.int64, shape=(None, None))
+sts_input2 = tf.sparse_placeholder(tf.int64, shape=(None, None))
+
+# For evaluation we use exactly normalized rather than
+# approximately normalized.
+sts_encode1 = tf.nn.l2_normalize(
+    module(
+        inputs=dict(values=sts_input1.values,
+                    indices=sts_input1.indices,
+                    dense_shape=sts_input1.dense_shape)),
+    axis=1)
+sts_encode2 = tf.nn.l2_normalize(
+    module(
+        inputs=dict(values=sts_input2.values,
+                    indices=sts_input2.indices,
+                    dense_shape=sts_input2.dense_shape)),
+    axis=1)
+
+sim_scores = -tf.acos(tf.reduce_sum(tf.multiply(sts_encode1, sts_encode2), axis=1))
+
+def run_sts_benchmark(session):
+  """Returns the similarity scores"""
+  scores = session.run(
+      sim_scores,
+      feed_dict={
+          sts_input1.values: values1,
+          sts_input1.indices:  indices1,
+          sts_input1.dense_shape:  dense_shape1,
+          sts_input2.values:  values2,
+          sts_input2.indices:  indices2,
+          sts_input2.dense_shape:  dense_shape2,
+      })
+  return scores
+
+
+with tf.Session() as session:
+  session.run(tf.global_variables_initializer())
+  session.run(tf.tables_initializer())
+  scores = run_sts_benchmark(session)
+print(len(scores))
+for i in range(len(scores)):
+    print(scores[i])
+print(scores)
+print(similarity_scores)
+pearson_correlation = scipy.stats.pearsonr(scores, similarity_scores)
+print('Pearson correlation coefficient = {0}\np-value = {1}'.format(
+    pearson_correlation[0], pearson_correlation[1]))
