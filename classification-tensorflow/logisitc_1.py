@@ -26,7 +26,8 @@ with tf.Session() as sess:
         err, _ = sess.run([cost, train_op], {X: xs, Y: ys})
         if epoch % 100 == 0:
             print(epoch, err)
-        if abs(prev_err - err) < 0.00001:
+        if abs(prev_err - err) < 0.0001:
+            print(epoch, err)
             print(1 - prev_err)
             break
         prev_err = err
