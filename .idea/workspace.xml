@@ -4,11 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/similar_sentence/train_data.py" line="145" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd8fe127-f97b-4523-b71d-444dd64be3e2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classification-tensorflow/linear_regression_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/classification-tensorflow/linear_regression_classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regression-tensorflow/regularization_tensorflow.py" beforeDir="false" afterPath="$PROJECT_DIR$/regression-tensorflow/regularization_tensorflow.py" afterDir="false" />
-    </list>
+    <list default="true" id="dd8fe127-f97b-4523-b71d-444dd64be3e2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,25 +13,37 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MachineLearning$MachineLearning.coverage" NAME="MachineLearning Coverage Results" MODIFIED="1527758075409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/MachineLearning$MachineLearning.coverage" NAME="MachineLearning Coverage Results" MODIFIED="1527860000658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/MachineLearning$train_data.coverage" NAME="train_data Coverage Results" MODIFIED="1527771184439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_sentence" />
     <SUITE FILE_PATH="coverage/MachineLearning$linear_regression.coverage" NAME="linear_regression Coverage Results" MODIFIED="1527758912042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regression-tensorflow" />
     <SUITE FILE_PATH="coverage/MachineLearning$logisitc_1.coverage" NAME="logisitc_1 Coverage Results" MODIFIED="1527856584648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classification-tensorflow" />
     <SUITE FILE_PATH="coverage/MachineLearning$logistic_2d.coverage" NAME="logistic_2d Coverage Results" MODIFIED="1527859374751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classification-tensorflow" />
     <SUITE FILE_PATH="coverage/MachineLearning$mlp_for_mnist.coverage" NAME="mlp_for_mnist Coverage Results" MODIFIED="1527587335455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MLP/MLP_FOR_MNIST" />
-    <SUITE FILE_PATH="coverage/MachineLearning$linear_regression_classification.coverage" NAME="linear_regression_classification Coverage Results" MODIFIED="1527859582976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classification-tensorflow" />
+    <SUITE FILE_PATH="coverage/MachineLearning$linear_regression_classification.coverage" NAME="linear_regression_classification Coverage Results" MODIFIED="1527860068599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classification-tensorflow" />
     <SUITE FILE_PATH="coverage/MachineLearning$regularization_tensorflow.coverage" NAME="regularization_tensorflow Coverage Results" MODIFIED="1527856903440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regression-tensorflow" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="MachineLearning" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="linear_regression_classification.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="linear_regression_classification.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classification-tensorflow/linear_regression_classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+            <state relative-caret-position="102">
+              <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="softmax_classification.ipynb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/classification-tensorflow/softmax_classification.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="2" />
             </state>
           </provider>
         </entry>
@@ -45,8 +53,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -75,6 +83,7 @@
         <option value="$PROJECT_DIR$/regression-tensorflow/regularization_tensorflow.py" />
         <option value="$PROJECT_DIR$/classification-tensorflow/logistic_2d.py" />
         <option value="$PROJECT_DIR$/classification-tensorflow/linear_regression_classification.py" />
+        <option value="$PROJECT_DIR$/classification-tensorflow/softmax_classification.ipynb" />
       </list>
     </option>
   </component>
@@ -87,7 +96,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="1" fullScreen="true">
     <option name="x" value="641" />
     <option name="y" value="99" />
     <option name="width" value="663" />
@@ -304,7 +313,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-33" width="1366" height="801" extended-state="0" />
+    <frame x="0" y="-33" width="1366" height="801" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289256" />
@@ -312,14 +321,14 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299566" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49926794" weight="0.512301" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23299566" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32561505" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18712121" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23299566" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.5513748" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18712121" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.09242424" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.09242424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.32954547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -641,11 +650,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classification-tensorflow/linear_regression_classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+        <state relative-caret-position="102">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classification-tensorflow/softmax_classification.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="2" />
         </state>
       </provider>
     </entry>
