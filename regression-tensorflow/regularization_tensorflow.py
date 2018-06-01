@@ -50,7 +50,7 @@ sess = tf.Session()
 init = tf.global_variables_initializer()
 sess.run(init)
 
-for reg_lambda in np.linspace(0, 1, 100):
+for reg_lambda in np.linspace(0, 1, 10):
     for epoch in range(training_epochs):
         sess.run(train_op, feed_dict={X: x_train, Y: y_train})
     final_cost = sess.run(cost, feed_dict={X: x_test, Y: y_test})

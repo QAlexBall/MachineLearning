@@ -25,6 +25,7 @@ def model(X, w):
 y_model = model(X, w)
 cost = tf.reduce_sum(tf.square(Y - y_model))
 train_op = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)
+# tf.greater 比较了y_model和0.5, y_model大时输出true, 被tf.to_float转成1..
 correct_prediction = tf.equal(Y, tf.to_float(tf.greater(y_model, 0.5)))
 accuracy = tf.reduce_mean(tf.to_float(correct_prediction))
 
@@ -40,7 +41,8 @@ for epoch in range(training_epochs):
 
 w_val = sess.run(w)
 print('learned parameters', w_val)
-print('accurary', sess.run(accuracy, feed_dict={X: xs, Y: labels}))
+print('accurary', sess.run(accuracy, feed_dict={X: xs, Y: labels}),
+      sess.run(correct_prediction, feed_dict={X: xs, Y: labels}))
 sess.close()
 
 all_xs = np.linspace(0, 10, 100)

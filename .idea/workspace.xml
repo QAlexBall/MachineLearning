@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dd8fe127-f97b-4523-b71d-444dd64be3e2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classification-tensorflow/linear_regression_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/classification-tensorflow/linear_regression_classification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regression-tensorflow/regularization_tensorflow.py" beforeDir="false" afterPath="$PROJECT_DIR$/regression-tensorflow/regularization_tensorflow.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,53 +20,22 @@
     <SUITE FILE_PATH="coverage/MachineLearning$MachineLearning.coverage" NAME="MachineLearning Coverage Results" MODIFIED="1527758075409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/MachineLearning$train_data.coverage" NAME="train_data Coverage Results" MODIFIED="1527771184439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/similar_sentence" />
     <SUITE FILE_PATH="coverage/MachineLearning$linear_regression.coverage" NAME="linear_regression Coverage Results" MODIFIED="1527758912042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regression-tensorflow" />
+    <SUITE FILE_PATH="coverage/MachineLearning$logisitc_1.coverage" NAME="logisitc_1 Coverage Results" MODIFIED="1527856584648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classification-tensorflow" />
+    <SUITE FILE_PATH="coverage/MachineLearning$logistic_2d.coverage" NAME="logistic_2d Coverage Results" MODIFIED="1527859374751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classification-tensorflow" />
     <SUITE FILE_PATH="coverage/MachineLearning$mlp_for_mnist.coverage" NAME="mlp_for_mnist Coverage Results" MODIFIED="1527587335455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MLP/MLP_FOR_MNIST" />
-    <SUITE FILE_PATH="coverage/MachineLearning$linear_regression_classification.coverage" NAME="linear_regression_classification Coverage Results" MODIFIED="1527773469698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classification-tensorflow" />
-    <SUITE FILE_PATH="coverage/MachineLearning$regularization_tensorflow.coverage" NAME="regularization_tensorflow Coverage Results" MODIFIED="1527771728187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regression-tensorflow" />
+    <SUITE FILE_PATH="coverage/MachineLearning$linear_regression_classification.coverage" NAME="linear_regression_classification Coverage Results" MODIFIED="1527859582976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classification-tensorflow" />
+    <SUITE FILE_PATH="coverage/MachineLearning$regularization_tensorflow.coverage" NAME="regularization_tensorflow Coverage Results" MODIFIED="1527856903440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regression-tensorflow" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="regularization_tensorflow.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/regression-tensorflow/regularization_tensorflow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="linear_regression_classification.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classification-tensorflow/linear_regression_classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state relative-caret-position="174">
+              <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="train_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/similar_sentence/train_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="174" column="48" selection-start-line="174" selection-start-column="48" selection-end-line="174" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="poly_regression.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/regression-tensorflow/poly_regression.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="1" />
             </state>
           </provider>
         </entry>
@@ -101,7 +71,9 @@
         <option value="$PROJECT_DIR$/regression-tensorflow/linear_regression.py" />
         <option value="$PROJECT_DIR$/regression-tensorflow/poly_regression.ipynb" />
         <option value="$PROJECT_DIR$/similar_sentence/train_data.py" />
+        <option value="$PROJECT_DIR$/classification-tensorflow/logisitc_1.py" />
         <option value="$PROJECT_DIR$/regression-tensorflow/regularization_tensorflow.py" />
+        <option value="$PROJECT_DIR$/classification-tensorflow/logistic_2d.py" />
         <option value="$PROJECT_DIR$/classification-tensorflow/linear_regression_classification.py" />
       </list>
     </option>
@@ -115,11 +87,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="271" />
-    <option name="y" value="53" />
-    <option name="width" value="673" />
-    <option name="height" value="553" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="641" />
+    <option name="y" value="99" />
+    <option name="width" value="663" />
+    <option name="height" value="556" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -129,7 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,12 +115,18 @@
             </path>
             <path>
               <item name="MachineLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="regression-tensorflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,25 +168,6 @@
       <option name="ipnbHost" value="127.0.0.1" />
       <option name="ipnbPort" value="8888" />
     </configuration>
-    <configuration name="linear_regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MachineLearning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/regression-tensorflow" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/regression-tensorflow/linear_regression.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="linear_regression_classification" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -229,7 +187,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="mlp_for_mnist" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="logisitc_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MachineLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,12 +195,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MLP/MLP_FOR_MNIST" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classification-tensorflow" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MLP/MLP_FOR_MNIST/mlp_for_mnist.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classification-tensorflow/logisitc_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="logistic_2d" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MachineLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classification-tensorflow" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classification-tensorflow/logistic_2d.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -288,19 +265,19 @@
     </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.MachineLearning" />
-      <item itemvalue="Python.mlp_for_mnist" />
       <item itemvalue="Python.train_data" />
-      <item itemvalue="Python.linear_regression" />
       <item itemvalue="Python.regularization_tensorflow" />
       <item itemvalue="Python.linear_regression_classification" />
+      <item itemvalue="Python.logisitc_1" />
+      <item itemvalue="Python.logistic_2d" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.linear_regression_classification" />
+        <item itemvalue="Python.logistic_2d" />
         <item itemvalue="Python.regularization_tensorflow" />
+        <item itemvalue="Python.logisitc_1" />
         <item itemvalue="Python.train_data" />
-        <item itemvalue="Python.linear_regression" />
-        <item itemvalue="Python.mlp_for_mnist" />
       </list>
     </recent_temporary>
   </component>
@@ -327,19 +304,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1366" height="738" extended-state="6" />
+    <frame x="0" y="-33" width="1366" height="801" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289256" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.32961783" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299566" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49926794" weight="0.512301" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.0661157" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32561985" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27045456" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23299566" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32561505" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18712121" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.67942584" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.09242424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -375,6 +353,43 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/regression-tensorflow/regularization_tensorflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similar_sentence/train_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2890">
+          <caret line="174" column="48" selection-start-line="174" selection-start-column="48" selection-end-line="174" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regression-tensorflow/poly_regression.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classification-tensorflow/linear_regression_classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/regression-tensorflow/regularization_tensorflow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -570,10 +585,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/regression-tensorflow/linear_regression.py">
+    <entry file="file://$PROJECT_DIR$/similar_sentence/train_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        <state relative-caret-position="2890">
+          <caret line="174" column="48" selection-start-line="174" selection-start-column="48" selection-end-line="174" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -584,20 +602,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/similar_sentence/train_data.py">
+    <entry file="file://$PROJECT_DIR$/regression-tensorflow/linear_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="174" column="48" selection-start-line="174" selection-start-column="48" selection-end-line="174" selection-end-column="48" />
+        <state relative-caret-position="476">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classification-tensorflow/logistic_2d.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classification-tensorflow/logisitc_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" column="75" lean-forward="true" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/regression-tensorflow/regularization_tensorflow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="323">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -606,8 +641,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classification-tensorflow/linear_regression_classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="174">
+          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
