@@ -7,6 +7,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import pandas as pd
 from sklearn.externals import joblib
 from sklearn.neural_network import MLPClassifier
+from sklearn.feature_selection import VarianceThreshold
+
 import tensorflow as tf
 
 
@@ -132,6 +134,8 @@ with tf.Session() as session:
     # print(message_embeddings1[0])
     # print(message_embeddings1[0][0])
     # print(len(message_embeddings1))
+    sel = VarianceThreshold(threshold=(.8 * (1 - .2)))
+    traindata = sel.fit_transform(traindata)
     clf.fit(traindata, similarity_scores)
     print(clf.loss_)
     print(clf.predict(testdata))
