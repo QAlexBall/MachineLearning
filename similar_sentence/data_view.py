@@ -22,10 +22,14 @@ def load_dataset(filename):
 
 
 data = load_dataset('../atec_nlp_sim_train_add.csv')
-data_test = data.iloc[:100]
+data_train = data.iloc[:100]
+data_test = data.iloc[60:76]
 print(data_test)
+
 data = data.sort_values(by='sim', ascending=False)
-data_train = data.iloc[9000:12000]
+data_train = data.iloc[:100]
+data_test = data.iloc[60:76]
+print(data_test)
 
 print('Start downlaod...')
 module = hub.Module("/home/alex/my_module_cache/9c61abbea1e6365bdd67e17707f5dd2434ea42d7/")
@@ -57,7 +61,6 @@ def process_to_IDs_in_sparse_format(sp, sentences):
 values1, indices1, dense_shape1 = process_to_IDs_in_sparse_format(sp, data_train['sent_1'].tolist())
 values2, indices2, dense_shape2 = process_to_IDs_in_sparse_format(sp, data_train['sent_2'].tolist())
 similarity_scores = data_train['sim'].tolist()
-print(similarity_scores)
 
 
 values3, indices3, dense_shape3 = process_to_IDs_in_sparse_format(sp, data_test['sent_1'].tolist())
@@ -104,96 +107,12 @@ with tf.Session() as session:
             input_placeholder.indices: indices4,
             input_placeholder.dense_shape: dense_shape4})
 
-    import matplotlib.pyplot as plt
 
-    plt.scatter(test1, test2)
-
-    plt.show()
-
-    # print((message_embeddings1,message_embeddings2).shape)
-
-    clf = MLPClassifier(activation='relu', alpha=1e-05, batch_size='auto',
-                        beta_1=0.9, beta_2=0.999, early_stopping=False,
-                        epsilon=1e-08, hidden_layer_sizes=(100, 100, 100), learning_rate='constant',
-                        learning_rate_init=0.01, max_iter=10000, momentum=0.9,
-                        nesterovs_momentum=True, power_t=0.5, random_state=1, shuffle=True,
-                        solver='sgd', tol=0.0001, validation_fraction=0.1, verbose=False,
-                        warm_start=False)
-    traindata = []
-    for i in range(0, len(message_embeddings1)):
-        data = np.concatenate((message_embeddings1[i], message_embeddings2[i]))
-        traindata.append(data)
-
-    testdata = []
-    for i in range(0, len(test1)):
-        data = np.concatenate((test1[i], test2[i]))
-        testdata.append(data)
-    # print(message_embeddings1)
-    # print(message_embeddings1[0])
-    # print(message_embeddings1[0][0])
-    # print(len(message_embeddings1))
-    clf.fit(traindata, similarity_scores)
-    print(clf.loss_)
-    print(clf.predict(testdata))
-    # joblib.dump(clf, 'clf.pkl')
-'''
-
-    # lg = LogisticRegression()
-    # lg.fit(message_embeddings, similarity_scores)
-    # print(lg.predict(test))
-    # joblib.dump(clf, './clf1.pkl')
-
-    # for i, message_embedding in enumerate(np.array(message_embeddings).tolist()):
-    #   print("Message: {}".format(data_train['sent_1'][i]))
-    #   print("Embedding size: {}".format(len(message_embedding)))
-    #   message_embedding_snippet = ", ".join(
-    #       (str(x) for x in message_embedding[:3]))
-    #   print("Embedding: [{}, ...]\n".format(message_embedding_snippet))
-sts_input1 = tf.sparse_placeholder(tf.int64, shape=(None, None))
-sts_input2 = tf.sparse_placeholder(tf.int64, shape=(None, None))
-
-# For evaluation we use exactly normalized rather than
-# approximately normalized.
-sts_encode1 = tf.nn.l2_normalize(
-    module(
-        inputs=dict(values=sts_input1.values,
-                    indices=sts_input1.indices,
-                    dense_shape=sts_input1.dense_shape)),
-    axis=1)
-sts_encode2 = tf.nn.l2_normalize(
-    module(
-        inputs=dict(values=sts_input2.values,
-                    indices=sts_input2.indices,
-                    dense_shape=sts_input2.dense_shape)),
-    axis=1)
-
-sim_scores = -tf.acos(tf.reduce_sum(tf.multiply(sts_encode1, sts_encode2), axis=1))
-
-def run_sts_benchmark(session):
-  """Returns the similarity scores"""
-  scores = session.run(
-      sim_scores,
-      feed_dict={
-          sts_input1.values: values1,
-          sts_input1.indices:  indices1,
-          sts_input1.dense_shape:  dense_shape1,
-          sts_input2.values:  values2,
-          sts_input2.indices:  indices2,
-          sts_input2.dense_shape:  dense_shape2,
-      })
-  return scores
+import matplotlib.pyplot as plt
+plt.figure()
+for i in range(len(test1)):
+    plt.subplot(4, 4, i + 1)
+    plt.scatter(test1[i], test2[i])
+plt.show()
 
 
-with tf.Session() as session:
-  session.run(tf.global_variables_initializer())
-  session.run(tf.tables_initializer())
-  scores = run_sts_benchmark(session)
-# print(len(scores))
-# for i in range(len(scores)):
-#     print(scores[i])
-# print(scores)
-print(similarity_scores)
-pearson_correlation = scipy.stats.pearsonr(scores, similarity_scores)
-print('Pearson correlation coefficient = {0}\np-value = {1}'.format(
-    pearson_correlation[0], pearson_correlation[1]))
-'''
