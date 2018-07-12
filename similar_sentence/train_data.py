@@ -1,11 +1,11 @@
-import tensorflow_hub as hub
-import sentencepiece as spm
-import numpy as np
 import os
-import scipy
+
+import numpy as np
+import sentencepiece as spm
+import tensorflow_hub as hub
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import pandas as pd
-from sklearn.externals import joblib
 from sklearn.neural_network import MLPClassifier
 from sklearn.feature_selection import VarianceThreshold
 
